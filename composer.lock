@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
+    "content-hash": "65225d7c6be04415204af936d2b88699",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -551,6 +551,76 @@
             "time": "2020-04-28T08:47:37+00:00"
         },
         {
+            "name": "graham-campbell/manager",
+            "version": "v4.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrahamCampbell/Laravel-Manager.git",
+                "reference": "9584dcca30aeaebd04bed7f1a59ee52fe5b24b49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Manager/zipball/9584dcca30aeaebd04bed7f1a59ee52fe5b24b49",
+                "reference": "9584dcca30aeaebd04bed7f1a59ee52fe5b24b49",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^5.5|^6.0|^7.0",
+                "illuminate/support": "^5.5|^6.0|^7.0",
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "graham-campbell/analyzer": "^2.4|^3.0",
+                "graham-campbell/testbench-core": "^3.1",
+                "mockery/mockery": "^1.3.1",
+                "phpunit/phpunit": "^6.5|^7.5|^8.4|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GrahamCampbell\\Manager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "Manager Provides Some Manager Functionality For Laravel",
+            "keywords": [
+                "Graham Campbell",
+                "GrahamCampbell",
+                "Laravel Manager",
+                "Laravel-Manager",
+                "connector",
+                "framework",
+                "interface",
+                "laravel",
+                "manager"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/graham-campbell/manager",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-04-26T09:40:56+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.5.5",
             "source": {
@@ -738,6 +808,47 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "kamermans/guzzle-oauth2-subscriber",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kamermans/guzzle-oauth2-subscriber.git",
+                "reference": "0e484edf9b8b12ec4710f86ba9b0831ccd1f6283"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kamermans/guzzle-oauth2-subscriber/zipball/0e484edf9b8b12ec4710f86ba9b0831ccd1f6283",
+                "reference": "0e484edf9b8b12ec4710f86ba9b0831ccd1f6283",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": ">=4.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kamermans\\OAuth2\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Kamerman",
+                    "email": "stevekamerman@gmail.com"
+                }
+            ],
+            "description": "OAuth 2.0 client for Guzzle 4, 5 and 6+",
+            "keywords": [
+                "Guzzle",
+                "oauth"
+            ],
+            "time": "2019-02-26T16:58:01+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1235,6 +1346,117 @@
                 }
             ],
             "time": "2020-05-22T08:12:19+00:00"
+        },
+        {
+            "name": "namelivia/fitbit-http-php",
+            "version": "0.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/namelivia/fitbit-http-php.git",
+                "reference": "c0a6c939eaa1ba9354f3fb9e855b548ff24da7d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/namelivia/fitbit-http-php/zipball/c0a6c939eaa1ba9354f3fb9e855b548ff24da7d1",
+                "reference": "c0a6c939eaa1ba9354f3fb9e855b548ff24da7d1",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3",
+                "kamermans/guzzle-oauth2-subscriber": "^1.0",
+                "nesbot/carbon": "^2.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^6.5|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Namelivia\\Fitbit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "José Ignacio Amelivia Santiago",
+                    "email": "jignacio.amelivia@gmail.com",
+                    "homepage": "https://namelivia.com"
+                }
+            ],
+            "description": "PHP SDK for accessing the Fitbit API",
+            "keywords": [
+                "api",
+                "fitbit",
+                "sdk"
+            ],
+            "time": "2020-06-28T17:43:45+00:00"
+        },
+        {
+            "name": "namelivia/laravel-fitbit",
+            "version": "0.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/namelivia/laravel-fitbit.git",
+                "reference": "9347466be293e20f2972ff549b017776b7e2e281"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/namelivia/laravel-fitbit/zipball/9347466be293e20f2972ff549b017776b7e2e281",
+                "reference": "9347466be293e20f2972ff549b017776b7e2e281",
+                "shasum": ""
+            },
+            "require": {
+                "graham-campbell/manager": "3.*|4.*",
+                "illuminate/contracts": "5.5.*|5.6.*|5.7.*|5.8.*|6.*|7.*",
+                "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|6.*|7.*",
+                "kamermans/guzzle-oauth2-subscriber": "^1.0",
+                "namelivia/fitbit-http-php": "0.0.10",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "graham-campbell/analyzer": "^3.0",
+                "graham-campbell/testbench": "3.*|4.*|5.*",
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^9.2.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Namelivia\\Fitbit\\Laravel\\FitbitServiceProvider"
+                    ],
+                    "aliases": {
+                        "Fitbit": "Namelivia\\Fitbit\\Laravel\\Facades\\Fitbit"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Namelivia\\Fitbit\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "José Ignacio Amelivia Santiago",
+                    "email": "jignacio.amelivia@gmail.com",
+                    "homepage": "https://namelivia.com"
+                }
+            ],
+            "description": "A Fitbit web api library for Laravel",
+            "keywords": [
+                "fitbit",
+                "laravel"
+            ],
+            "time": "2020-06-29T12:31:26+00:00"
         },
         {
             "name": "nesbot/carbon",
