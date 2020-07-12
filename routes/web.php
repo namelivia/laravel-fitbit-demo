@@ -14,6 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    Fitbit::activities()->activity()->getLifetimeStats();
+    try {
+        Fitbit::activities()->activity()->getLifetimeStats();
+    } catch (Exception $e) {
+        return redirect(Fitbit::getAuthUri());
+    }
+    return view('welcome');
+});
+
+Route::get('/authorize', function () {
+    $code = request()->input('code');
+    Fitbit::setAuthorizationCode($code);
+    try {
+        dump('uno');
+        Fitbit::activities()->activity()->getLifetimeStats();
+    } catch (Exception $e) {
+        dd('a la mierda');
+    }
     return view('welcome');
 });
